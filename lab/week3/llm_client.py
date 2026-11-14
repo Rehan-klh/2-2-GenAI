@@ -26,7 +26,7 @@ class LLMProvider(ABC):
 class GeminiProvider(LLMProvider):
     provider_name = "Gemini"
  
-    def __init__(self, api_key, model="gemini-2.5-flash"):
+    def __init__(self, api_key, model="gemini-3.5-flash-lite"):
         self.model = model
         # timeout is in milliseconds: 60000 ms = 60 seconds
         self.client = genai.Client(
