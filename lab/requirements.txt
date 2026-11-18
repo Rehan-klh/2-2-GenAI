@@ -4,4 +4,4 @@ google-genai
 requests
 transformers
 sentencepiece
-
+torch
